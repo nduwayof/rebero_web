@@ -718,6 +718,10 @@ ul.tag-cloud li {
   line-height: 50px;
   color: #fff;
 }
+p.navbar-paragraph{
+  font-size: 13px;
+  font-weight: bold;
+}
 .navbar-inverse .navbar-nav {
   margin-top: 20px;
 }
