@@ -61,6 +61,10 @@ hr {
   background: transparent;
   color: #fff;
 }
+ul.nav.nav-tabs{
+  font-size: larger;
+  font-weight: bold;
+}
 .btn-transparent:hover {
   border-color: rgba(255, 255, 255, 0.5);
 }
