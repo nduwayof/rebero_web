@@ -1038,10 +1038,12 @@ ul.social > li > a:hover {
 }
 ul.pagination > li > a {
   border: 0;
+  font-size: 25px;
+  font-weight: 900;
 }
 ul.pagination > li.active > a,
 ul.pagination > li:hover > a {
-  background-color: #34495e;
+  background-color: midnightblue;
   color: #fff;
 }
 textarea#message {
@@ -1134,6 +1136,37 @@ ul.faq li > div h3 {
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee;
 }
+
+/*Scrolling CSS*/
+
+/*Scrolling css */
+.btn:focus,
+.btn:active,
+.btn.active {
+  outline: 0;
+}
+
+.scroll-top {
+  z-index: 1049;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px;
+}
+
+.scroll-top .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+  outline: 0;
+}
+/*End of scrolling css*/
 
 /*end of the form*/
 
