@@ -46,13 +46,7 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <i class="icon-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="photoGallery.html">Photo Gallery</a></li>
-                        <li><a href="videoGallery.html">Video Gallery</a></li>
-                    </ul>
-                </li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
         </div>
@@ -66,14 +60,14 @@
             <li data-target="#main-slider" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
+            <div class="item active" style="background-image: url(images/slider/bg1.JPG)">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content centered">
                                 <h2 class="boxed animation animated-item-1">Powerful Cameras</h2><br>
 
-                                <p class="boxed animation animated-item-2"> At Rebero Films Ltd we only have the best
+                                <p class="boxed animation animated-item-2"> At Rebero Films Ltd. we only have the best
                                     equipments you found in Country</p><br>
                                 <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
                             </div>
@@ -81,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(images/slider/bg2.jpg)">
+            <div class="item" style="background-image: url(images/slider/bg2.JPG)">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -96,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(images/slider/bg3.jpg)">
+            <div class="item" style="background-image: url(images/slider/bg3.JPG)">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -125,6 +119,7 @@
     <div class="container">
         <div class="row">
             <br>
+
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <div class="caption">
@@ -140,7 +135,8 @@
                         <br>
 
                         <p class="text-center">
-                            <a href="#" class="btn btn-primary" role="button">
+                            <a href="javascript:void(0)" onclick="ourVisions()"
+                               class="btn btn-primary" role="button">
                                 Read More...
                             </a>
                         </p>
@@ -162,7 +158,8 @@
                         <br>
 
                         <p class="text-center">
-                            <a href="#" class="btn btn-primary" role="button">
+                            <a href="javascript:void(0)" onclick="ourMissions()"
+                               class="btn btn-primary" role="button">
                                 Read More...
                             </a>
                         </p>
@@ -175,8 +172,9 @@
                         <h3 class="text-center">
                             Product & Services
                         </h3>
+
                         <p class="my-text">
-                             Check our services and products and
+                            Check our services and products and
                         <ol type="a">
                             <li>
                                 Making independent films
@@ -187,7 +185,83 @@
                         </ol>
                         </p>
                         <p class="text-center">
-                            <a href="#" class="btn btn-primary" role="button">
+                            <a href="javascript:void(0)" onclick="servicesProd()" class="btn btn-primary" role="button">
+                                Read More...
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3 class="text-center">
+                            Our Goals
+                        </h3>
+
+                        <p class="my-text">
+                            Become a media house built on the basis of creativity,
+                            quality and cultural values in East Africa and in Great
+                            Lakes Region.
+                        </p>
+                        <br>
+
+                        <p class="text-center">
+                            <a href="javascript:void(0)" onclick="ourGoals()"
+                               class="btn btn-primary" role="button">
+                                Read More...
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3 class="text-center">
+                            Our Values
+                        </h3>
+
+                        <p class="my-text">
+                            Offer quality, quick and cost effective audiovisual
+                            products and services
+                        </p>
+                        <br>
+                        <br>
+
+                        <p class="text-center">
+                            <a href="javascript:void(0)" onclick="ourValues()"
+                               class="btn btn-primary" role="button">
+                                Read More...
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3 class="text-center">
+                            Our Partners
+                        </h3>
+
+                        <p class="my-text">
+                            Check our services and products and
+                        <ol type="a">
+                            <li>
+                                Making independent films
+                            </li>
+                            <li>
+                                Audio Visual Event Coverage
+                            </li>
+                        </ol>
+                        </p>
+                        <p class="text-center">
+                            <a href="javascript:void(0)" onclick="ourPartners()" class="btn btn-primary" role="button">
                                 Read More...
                             </a>
                         </p>
@@ -197,6 +271,118 @@
         </div>
     </div>
 </section>
+<div id="vision" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <h2 class="text-center">
+                        Our Visions
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body no-padding">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mission" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <h2 class="text-center">
+                        Our Missions
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body no-padding">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services_prod" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <h2 class="text-center">
+                        Our Services & Products
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body no-padding">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="goals" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <h2 class="text-center">
+                        Our Goals
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body no-padding">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="values" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <h2 class="text-center">
+                        Our Values
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body no-padding">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="partners" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <h2 class="text-center">
+                        Our Partners
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body no-padding">
+
+            </div>
+        </div>
+    </div>
+</div>
 <section id="recent-works">
     <div class="container">
         <div class="row">
@@ -488,6 +674,7 @@
 </div>
 <footer id="footer" class="midnight-blue">
     <div class="container">
+
         <div class="row">
             <div class="col-sm-6">
                 &copy; 2015 Rebero Films Ltd. All Rights Reserved.
@@ -504,8 +691,6 @@
         </div>
     </div>
 </footer>
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>

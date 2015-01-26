@@ -85,3 +85,22 @@ jQuery(function($) {
 		social_tools: false
 	});	
 });
+
+function ourVisions(){
+	$('#vision').modal('show');
+}
+function ourMissions(){
+	$('#mission').modal('show');
+}
+function servicesProd(){
+	$('#services_prod').modal('show');
+}
+function ourGoals(){
+	$('#goals').modal('show');
+}
+function ourValues(){
+	$('#values').modal('show');
+}
+function ourPartners(){
+	$('#partners').modal('show');
+}
