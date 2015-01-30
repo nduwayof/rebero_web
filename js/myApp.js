@@ -9,12 +9,12 @@ myApp.config(['$stateProvider','$urlRouterProvider',
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('gallery-1',{
+            .state('photo',{
                 url : '/',
-                templateUrl : 'views/gallery-1.html'
+                templateUrl : 'views/photo.html'
             })
-            .state('gallery-2',{
-                url : '/1',
-                templateUrl: 'views/gallery-2.html'
+            .state('video',{
+                url : '/video',
+                templateUrl: 'views/video.html'
             })
     }]);

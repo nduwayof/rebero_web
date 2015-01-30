@@ -24,10 +24,11 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/gallery/jssor.js"></script>
-    <script src="js/gallery/jssor.slider.js"></script>
+    <script src="js/angular.min.js"></script>
+
+
 </head>
-<body>
+<body ng-app="myApp">
 <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
@@ -52,8 +53,38 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li class="active"><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Gallery
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu"
+                        aria-labelledby="dropdownMenu">
+                        <li>
+                            <a tabindex="-1" ui-sref="photo">
+                                Photo Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" ui-sref="video">
+                                Video Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="contact-us.html">Contact Us</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        About Cinema
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu"
+                        aria-labelledby="dropdownMenu">
+                        <li><a href="#">Rwandan Cinema</a></li>
+                        <li><a href="#">East African Cinema</a></li>
+                        <li><a href="#">Latest from Hollywood</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -79,112 +110,8 @@
 </section>
 <section id="gallery">
     <div class="container">
-        <div class="row">
-            <div class="page-header">
-                <h2>Photo Gallery</h2>
-            </div>
-                <div class="col-lg-2"></div>
-                <div class="col-lg-9">
-                    <script src="js/gallery/script1.js"></script>
-                    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
-        height: 456px; background: #191919; overflow: hidden;">
+        <div ui-view>
 
-                        <!-- Loading Screen -->
-                        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
-                            </div>
-                            <div style="position: absolute; display: block; background: url(images/gallery/img/loading.gif) no-repeat center center;
-                top: 0px; left: 0px;width: 100%;height:100%;">
-                            </div>
-                        </div>
-
-                        <!-- Slides Container -->
-                        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
-                            <div>
-                                <img u="image" src="images/gallery/image-1.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-1.JPG" class="img-responsive"/>
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-2.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-2.JPG" class="img-responsive"/>
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-3.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-3.JPG" class="img-responsive"/>
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-4.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-4.JPG" class="img-responsive"/>
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-5.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-5.JPG" />
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-6.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-6.JPG" class="img-responsive"/>
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-7.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-7.JPG" class="img-responsive"/>
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-8.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-8.JPG" class="img-responsive"/>
-                            </div>
-                            <div>
-                                <img u="image" src="images/gallery/image-9.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-9.JPG" class="img-responsive"/>
-                            </div>
-
-                            <div>
-                                <img u="image" src="images/gallery/image-10.JPG" class="img-responsive"/>
-                                <img u="thumb" src="images/gallery/thumb-10.JPG" class="img-responsive"/>
-                            </div>
-                        </div>
-                        <link rel="stylesheet" href="css/gallery/style2.css"/>
-        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 158px; left: 8px;">
-        </span>
-                        <!-- Arrow Right -->
-        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 158px; right: 8px">
-        </span>
-                        <!-- Arrow Navigator Skin End -->
-
-                        <!-- Thumbnail Navigator Skin Begin -->
-                        <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 800px; height: 100px; left:0px; bottom: 0px;">
-                            <!-- Thumbnail Item Skin Begin -->
-                            <link rel="stylesheet" href="css/gallery/style1.css"/>
-                            <div u="slides" style="cursor: move;">
-                                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-                                    <div class=w><div u="thumbnailtemplate" style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></div></div>
-                                    <div class=c>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Thumbnail Item Skin End -->
-                        </div>
-                        <!-- Thumbnail Navigator Skin End -->
-                        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
-                    </div>
-                    <!-- Jssor Slider End -->
-                </div>
-                <div class="col-lg-1"></div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="page-header">
-                <h2>Video Gallery</h2>
-            </div>
-            <div class="col-lg-2">
-
-            </div>
-            <div class="col-lg-8">
-
-            </div>
-            <div class="col-lg-1">
-
-            </div>
         </div>
     </div>
 </section>
@@ -209,15 +136,43 @@
 
                 <div>
                     <ul class="arrow">
-                        <li><a href="#">Company Overview</a></li>
-                        <li><a href="#">Meet The Team</a></li>
-                        <li><a href="#">Our Awesome Partners</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Our Vision</a></li>
-                        <li><a href="#">Our Goals</a></li>
+                        <li>
+                            <a href="about-us.html">
+                                Company Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">
+                                Meet The Team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Our Awesome Partners
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html">
+                                Our Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="ourVisions()">
+                                Our Vision
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="ourGoals()">
+                                Our Goals
+                            </a>
+                        </li>
                         <li><a href="#">Our Objectives</a></li>
                         <hr>
-                        <li><a href="#">Contact Us</a></li>
+                        <li>
+                            <a href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
                         <li><a href="#">Rwandan Cinema</a></li>
                         <li><a href="#">East African Cinema</a></li>
                         <li><a href="#">Latest from Hollywood</a></li>
@@ -289,24 +244,30 @@
 </div>
 <footer id="footer" class="midnight-blue">
     <div class="container">
+
         <div class="row">
             <div class="col-sm-6">
                 &copy; 2015 Rebero Films Ltd. All Rights Reserved.
             </div>
             <div class="col-sm-6">
                 <ul class="pull-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Faq</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li>
-                    <!--#gototop-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a id="gototop" class="gototop" href><i class="icon-chevron-up"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+
+<script src="js/angular-ui-router.js"></script>
+<script src="js/myApp.js"></script>
+<script src="js/myControllers.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/main.js"></script>
+<script src="js/gallery/jssor.js"></script>
+<script src="js/gallery/jssor.slider.js"></script>
+<script src="js/gallery/jssor.player.ytiframe.js"></script>
 </body>
 </html>

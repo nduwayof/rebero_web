@@ -436,6 +436,9 @@ body > section {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);
 }
+#services a{
+    color: #bdc3c7;
+}
 #recent-works {
   padding: 90px 0;
 }
