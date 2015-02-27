@@ -254,6 +254,11 @@ body > section {
 .emerald {
   background-color: midnightblue;
 }
+.emerald1 {
+  color:#ffffff;
+  background-color: midnightblue;
+  height: 80px;
+}
 .nephritis {
   background-color: #27ae60;
 }
